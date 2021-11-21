@@ -28,17 +28,6 @@ public class LameDatabase {
                 }
             }
         }
-        else if (op.equals("edit")) {
-            for (int i = 0; i < databaseLame.length; i++) {
-                if (databaseLame[i].substring(0,1).equals(id)) {
-                    databaseLame[i] = databaseLame[i].substring(0,1) + data;
-                }
-                newDB += databaseLame[i];
-                if (i != databaseLame.length-1) {
-                    newDB += "#";
-                }
-            }
-        }
         else if (op.equals("add")) {
             String[] databaseAdd = new String[databaseLame.length+1];
             int counter = 0;
